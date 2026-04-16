@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adson - Jogo da Velha</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <section class="card">
+      <h1>Jogo da Velha Adson</h1>
+      <p class="status" id="status">Vez do boneco 1</p>
+
+      <div class="scoreboard">
+        <div class="score">
+          <span>Boneco 1</span>
+          <img
+            class="score-avatar"
+            src="https://www.bing.com/th/id/OIP.dOCuLsEG3oWXrY6kRwMviwHaHa?w=177&h=211&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"
+            alt="Boneco 1"
+          >
+          <strong id="score-x">0</strong>
+        </div>
+        <div class="score">
+          <span>Empates</span>
+          <strong id="score-draw">0</strong>
+        </div>
+        <div class="score">
+          <span>Boneco 2</span>
+          <img
+            class="score-avatar"
+            src="https://s2-techtudo.glbimg.com/vn4VHj0PxdDjE4gxm0_MLODXwhw=/0x0:1280x720/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2025/5/L/A8kQksTr2mZGuE9ZAZBw/tralalero.png"
+            alt="Boneco 2"
+          >
+          <strong id="score-o">0</strong>
+        </div>
+      </div>
+
+      <div class="board" id="board" aria-label="Tabuleiro do jogo da velha">
+        <button class="cell" data-index="0" aria-label="Casa 1"></button>
+        <button class="cell" data-index="1" aria-label="Casa 2"></button>
+        <button class="cell" data-index="2" aria-label="Casa 3"></button>
+        <button class="cell" data-index="3" aria-label="Casa 4"></button>
+        <button class="cell" data-index="4" aria-label="Casa 5"></button>
+        <button class="cell" data-index="5" aria-label="Casa 6"></button>
+        <button class="cell" data-index="6" aria-label="Casa 7"></button>
+        <button class="cell" data-index="7" aria-label="Casa 8"></button>
+        <button class="cell" data-index="8" aria-label="Casa 9"></button>
+      </div>
+
+      <div class="actions">
+        <button id="restart-round">Nova rodada</button>
+        <button id="restart-all" class="secondary">Zerar placar</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
